@@ -46,16 +46,18 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'put your unique phrase here' );
-define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
-define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
-define( 'NONCE_KEY',        'put your unique phrase here' );
-define( 'AUTH_SALT',        'put your unique phrase here' );
-define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
-define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
-define( 'NONCE_SALT',       'put your unique phrase here' );
-
+define('AUTH_KEY',         '46wNqR?mS1+oGj5ss6M@#KxaGZzW-r.H_M7&Xm[lI5-i-1qX2[JLiH0A u4.Zze!');
+define('SECURE_AUTH_KEY',  'jhN,xtVT|c=j6`{=;#DB/k/hv#j9-FopP]}#j#E9-u yRRK{nTo*g/H5?|EpnB,)');
+define('LOGGED_IN_KEY',    'z*+6nPp+@LCsy1i~Cm&3!$}obRrVJ-v4!l}R>iPhV&V^wt!37DmCT$5969H_:*J.');
+define('NONCE_KEY',        'm1*sdjbx8R}P+vY{i}Td!:zTm4^.mxNRl-WaC+--T=+Qnffoz&gZOPHw/pz=kPHO');
+define('AUTH_SALT',        'LBxErG+.;#$.WuJ-,W=yPDZ_=gYYl3g7z&/i`Pp1w|rJN,V2{=~7/^VG@L1y*Q+|');
+define('SECURE_AUTH_SALT', 'lEjN1k7i;.}]U|LF {SrcWOktx?,08PZjfEwAhSj*< |?X23LK2Pt~ Cm+y1C@ ^');
+define('LOGGED_IN_SALT',   'YI>N2SQi|55m@&`juPgZL!h5M-Jf4MiJT2PJ49T}_X$-i(9enNx8$):B{moldADl');
+define('NONCE_SALT',       'XSF+)-cv4IX|C_h(t,&3VT%)n]7*l*)3:oWnX0SbycM}JD++(+Mi%gZU;<}]&A=o');
 /**#@-*/
+define('WP_HOME','https://john.squareops.xyz');
+define('WP_SITEURL','https://john.squareops.xyz');
+if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)   $_SERVER['HTTPS']='on';
 
 /**
  * WordPress Database Table prefix.
