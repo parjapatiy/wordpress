@@ -1,0 +1,21 @@
+version: 0.2
+
+env:
+   parameter-store:
+           DB_NAME: "/MY/db_yan"
+           DB_USER: "/MY/user_yan"
+           DB_PASSWORD: "/MY/pass_yan"
+           DB_HOST: "/MY/host_yan"
+
+phases:
+    build:
+        command:
+            - sed -i 's/database_name_here/'$DB_NAME'/' wp-config.php
+            - sed -i 's/username_here/'$DB_USER'/' wp-config.php
+            - sed -i 's/password_here/'$DB_PASSWORD'/' wp-config.php
+            - sed -i 's/localhost/'$DB_HOST'/' wp-config.php
+
+artifacts:
+        files:
+           - '**/*'
+        name: wordpress-artifacts 
