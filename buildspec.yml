@@ -2,7 +2,7 @@ version: 0.2
 
 env:
    variables:
-      DB_NAME: "db_name"
+      DB_NAME: "wordpress"
    parameter-store:
            DB_USER: "/MY/user_yan"
            DB_PASSWORD: "/MY/pass_yan"
