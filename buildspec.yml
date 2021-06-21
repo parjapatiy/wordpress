@@ -1,9 +1,9 @@
 version: 0.2
 
 env:
-   
+   variables:
+      DB_NAME: "db_name"
    parameter-store:
-           DB_NAME: "/MY/db_yan"
            DB_USER: "/MY/user_yan"
            DB_PASSWORD: "/MY/pass_yan"
            DB_HOST: "/MY/host_yan"
