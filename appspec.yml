@@ -5,11 +5,8 @@ files:
       destination: /var/www/wordpress/
       
 
-hooks:
-  BeforeInstall:
-    
+hooks:  
  
-
   ApplicationStop:
     - location: scripts/stop_server.sh
       timeout: 300
