@@ -3,12 +3,10 @@ os: linux
 files:
     - source: /
       destination: /var/www/wordpress/
+      overwrite: true
 
 hooks:
-  BeforeInstall:
-    - location: scripts/remove_package.sh
-      runas: root
-      timeout: 300
+ 
 
   ApplicationStop:
     - location: scripts/stop_server.sh
