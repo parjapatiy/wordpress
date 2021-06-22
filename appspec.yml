@@ -7,9 +7,7 @@ files:
 
 hooks:
   BeforeInstall:
-    - location: scripts/remove_package.sh
-      timeout: 300
-      runas: root
+    
  
 
   ApplicationStop:
