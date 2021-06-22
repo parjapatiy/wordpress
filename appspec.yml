@@ -5,6 +5,10 @@ files:
       destination: /var/www/wordpress/
 
 hooks:
+  BeforeInstall:
+    - location: scripts/remove_package.sh
+      runas: root
+      timeout: 300
 
   ApplicationStop:
     - location: scripts/stop_server.sh
